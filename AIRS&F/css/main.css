@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans';
+  color: #000000;
+}
+
+/* HEADER */
+h1{
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+  font-size: 1.5em;
+}
+ h2 {
+   font-size: 1em;
+   font-weight: 300;
+   color: #6e6e6e;
+   margin-top: 0em;
+ }
+
+.logo {
+  text-align: center;
+  font-family: 'Baloo', cursive;
+  color: #ffffff;
+  font-size: 2em;
+  background-color: #0000ff;
+  padding: 0.5em 0em;
+
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 75% 5%;
+  padding-bottom: 1em;
+  margin: 0 1em;
+
+}
+
+.thumbnail{
+  width: 4em;
+  padding-top: 2em;
+  padding-left: 0.5em;
+}
+
+.filter {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  text-align: center;
+  margin: 0.5em 1em;
+  padding-bottom:1em;
+
+
+
+}
+.button {
+  color: #bfbfbf;
+  text-decoration: underline;
+  padding: 1em 0em;
+}
+
+.buttonm{
+  color: #bfbfbf;
+  text-decoration: underline;
+  padding: 1em 0em;
+  border-left:0.5px solid #bfbfbf;
+  border-right: 0.5px solid #bfbfbf;
+
+}
+
+
+
+.content1{
+  display: grid;
+  grid-template-columns: 100%;
+  background-image: url("../img/place1.jpg");
+
+   background-color: #cccccc;
+   height:200px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.content_text1{
+  padding-top: 3em;
+  color: white;
+  text-align: left;
+}
+.content2{
+  display: grid;
+  grid-template-columns: 100%;
+  background-image: url("../img/place2.jpg");
+
+   background-color: #cccccc;
+   height:200px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.content_text2{
+  padding-top: 3em;
+  color: balck;
+  text-align: left;
+}
+.content3{
+  display: grid;
+  grid-template-columns: 100%;
+  background-image: url("../img/place3.jpg");
+
+   background-color: #cccccc;
+   height:200px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.content_text3{
+  padding-top: 3em;
+  color: white;
+  text-align: left;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup1 {
+  margin: 10em auto;
+  padding: 20px;
+
+  background-image: url("../img/place1.jpg");
+
+   background-color: #cccccc;
+   height:600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup1 h2 {
+  margin-top: 0;
+  color: white;
+
+}
+.popup1 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup1 .close:hover {
+  color: #06D85F;
+}
+.popup1 .content {
+  color:white;
+  max-height: 200%;
+  overflow: auto;
+}
+.popup2 {
+  margin: 10em auto;
+  padding: 20px;
+
+  background-image: url("../img/place2.jpg");
+
+   background-color: #cccccc;
+   height:600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup2 h2 {
+  margin-top: 0;
+  color: white;
+
+}
+.popup2 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup2 .close:hover {
+  color: #06D85F;
+}
+.popup2 .content {
+  color:white;
+  max-height: 200%;
+  overflow: auto;
+}
+.popup3 {
+  margin: 10em auto;
+  padding: 20px;
+
+  background-image: url("../img/place3.jpg");
+
+   background-color: #cccccc;
+   height:600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup3 h2 {
+  margin-top: 0;
+  color: white;
+
+}
+.popup3 .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup3 .close:hover {
+  color: #06D85F;
+}
+.popup3 .content {
+  color:white;
+  max-height: 200%;
+  overflow: auto;
+}
+
+/* FOOTER */
+.footer{
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  margin: 0em 1em;
+  padding-top: 0.5em;
+  border-top: 0.5px solid #bfbfbf;
+
+}
+.booknow {
+  grid-column-start: 3;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #0000ff;
+  color: #ffffff;
+  padding-top: 0.9em;
+
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 90%;
+  }
+  .popup1{
+    width: 90%;
+  }
+  .popup2{
+    width: 90%;
+  }
+  .popup3{
+    width: 90%;
+  }
+}
